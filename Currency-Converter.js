@@ -13,8 +13,8 @@
 
 //Solution 
 function main() {
-    var amount = parseFloat(readLine(), 10);
-    var rate = parseFloat(readLine(), 10);
+    var amount = parseFloat(readLine(), 10); //for user input
+    var rate = parseFloat(readLine(), 10);  //for user input
     
     console.log(convert(amount, rate));
 }
