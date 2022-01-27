@@ -11,4 +11,4 @@ function countVowels (sentence){
     });
     return count;
 }
-console.log(countVowels("Bangladesh is a unitary parliamentary constitutional republic based on the Westminster system. I love Bangladesh"));
+console.log(countVowels("Bangladesh is my home land. I love Bangladesh"));
