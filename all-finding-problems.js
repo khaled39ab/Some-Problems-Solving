@@ -23,4 +23,5 @@ const removeDuplicate = number.filter (function (value, index, array){
     return array.indexOf (value) == index;
 });
 console.log(duplicate.sort());
+
 console.log(removeDuplicate.sort());
