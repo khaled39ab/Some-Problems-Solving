@@ -12,3 +12,15 @@ function countVowels (sentence){
     return count;
 }
 console.log(countVowels("Bangladesh is my home land. I love Bangladesh"));
+
+//finding duplicate number
+const number = [1, 5, 6, 2, 9, 4, 2, 8, 9, 4, 3, 1, 7];
+
+const duplicate = number.filter (function (value, index, array){
+    return array.indexOf (value) !== index;
+});
+const removeDuplicate = number.filter (function (value, index, array){
+    return array.indexOf (value) == index;
+});
+console.log(duplicate.sort());
+console.log(removeDuplicate.sort());
