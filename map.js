@@ -41,5 +41,6 @@
     let text = "";
     for (const x of fruits.entries()) {
         console.log(text += x);
+        console.log(x);
     }
 }
