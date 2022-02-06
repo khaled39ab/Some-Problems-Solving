@@ -1,5 +1,3 @@
-//https://github.com/khaled39ab/assignment.js
-
 //kilometer To meter convert
 function kilometerToMeter( length ) {
     var meters = length * 1000; 
