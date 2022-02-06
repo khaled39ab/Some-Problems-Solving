@@ -60,7 +60,7 @@ console.log("==========================");
 
 //console Fizz if number % 3 = 0, console Buzz if number % 5 = 0, console FizzBuzz if number % 3&5 = 0
 function FizzBuzz (number){
-    for (let i = 0; i < number; i++) {  
+    for (let i = 1; i <= number; i++) {  
         if (i % 15 === 0){
             console.log(i + " is FizzBuzz");
         } else if(i % 3 === 0){
@@ -73,4 +73,31 @@ function FizzBuzz (number){
     }
 }
 
-FizzBuzz(100);
+FizzBuzz(15);
+
+console.log("==========================");
+
+//Remove falsy value from array
+//falsy 6 value are null,NaN,false,undefined,0,""
+const mixed = [
+    "Ami",
+    undefined,
+    "1",
+    "",
+    true,
+    null,
+    "0",
+    0,
+    NaN,
+    false
+];
+
+// const truthy = mixed.filter (function(el){
+//     if (el){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
+const truthy = mixed.filter (Boolean);
+console.log(truthy);
