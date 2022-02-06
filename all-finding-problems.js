@@ -25,3 +25,16 @@ const removeDuplicate = number.filter (function (value, index, array){
 console.log(duplicate.sort());
 
 console.log(removeDuplicate.sort());
+
+
+//Finding count of word which is used in paragraph  & first index of that word
+const paragraph = "Normally, I like to hear and tell jokes and stories to my friends. I help my younger cousins in doing their home works daily. I love my parents very much. They also love me and promote me to do well in every field. They motivate and inspire me to study. My family is a cultural family. When we celebrate each festival together, we enjoyed it and have a great time. Really, I am fortunate to have this family."
+
+const match = paragraph.match (/love/gi); //RegExp
+// const count = match.length; // return error if no match found
+const count = match ? match.length : 0;
+console.log(count);
+
+let position = paragraph.search (/loves/i);
+position = position >= 0 ? position : "not found";
+console.log(position);
