@@ -13,6 +13,8 @@ function countVowels (sentence){
 }
 console.log(countVowels("Bangladesh is my home land. I love Bangladesh"));
 
+console.log("==========================");
+
 //finding duplicate number
 const number = [1, 5, 6, 2, 9, 4, 2, 8, 9, 4, 3, 1, 7];
 
@@ -26,6 +28,7 @@ console.log(duplicate.sort());
 
 console.log(removeDuplicate.sort());
 
+console.log("==========================");
 
 //Finding count of word which is used in paragraph  & first index of that word
 const paragraph = "Normally, I like to hear and tell jokes and stories to my friends. I help my younger cousins in doing their home works daily. I love my parents very much. They also love me and promote me to do well in every field. They motivate and inspire me to study. My family is a cultural family. When we celebrate each festival together, we enjoyed it and have a great time. Really, I am fortunate to have this family."
@@ -38,6 +41,7 @@ console.log(count);
 let position = paragraph.search (/loves/i);
 position = position >= 0 ? position : "not found";
 console.log(position);
+console.log("==========================");
 
 //Finding index of second parameter in first array parameter
 //input: linearSearch(["a", "b", "c", "d"], "c")
@@ -51,3 +55,22 @@ function linearSearch(arr, val){
 }
 
 console.log(linearSearch(["a", "b", "c", "d"], "e"));
+
+console.log("==========================");
+
+//console Fizz if number % 3 = 0, console Buzz if number % 5 = 0, console FizzBuzz if number % 3&5 = 0
+function FizzBuzz (number){
+    for (let i = 0; i < number; i++) {  
+        if (i % 15 === 0){
+            console.log(i + " is FizzBuzz");
+        } else if(i % 3 === 0){
+            console.log(i + " is Fizz");
+        } else if(i % 5 === 0){
+            console.log(i + " is Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+FizzBuzz(100);
