@@ -101,3 +101,29 @@ const mixed = [
 // });
 const truthy = mixed.filter (Boolean);
 console.log(truthy);
+
+console.log("==========================");
+
+//Remove falsy value from object
+const obj = {
+    a : "Ami",
+    b : undefined,
+    c : "1",
+    d : "",
+    e : true,
+    f : null,
+    g : "0",
+    h : 0,
+    i : NaN,
+    j : false
+};
+
+const truthyObj = function (obj){
+    for (let i in obj){
+        if(!obj[i]){
+            delete obj[i];
+        }
+    }
+    return obj;
+};
+console.log(truthyObj(obj));
