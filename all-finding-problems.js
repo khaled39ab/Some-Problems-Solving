@@ -38,3 +38,5 @@ console.log(count);
 let position = paragraph.search (/loves/i);
 position = position >= 0 ? position : "not found";
 console.log(position);
+
+//
