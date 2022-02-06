@@ -39,4 +39,15 @@ let position = paragraph.search (/loves/i);
 position = position >= 0 ? position : "not found";
 console.log(position);
 
-//
+//Finding index of second parameter in first array parameter
+//input: linearSearch(["a", "b", "c", "d"], "c")
+function linearSearch(arr, val){
+    for (let i = 0; i < arr.length; i++) {
+         if (arr[i] === val){
+             return i;
+         }      
+    }
+    return "Not Found!";
+}
+
+console.log(linearSearch(["a", "b", "c", "d"], "e"));
